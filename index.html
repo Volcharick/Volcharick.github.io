@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Редактирование Диеты</title>
+</head>
+<body>
+    <header></header>
+    <nav class="noselect">
+        <div class="menu">
+            <div class="menu__title logo-block">
+                <span class="logo-block__text">Taste</span>
+            </div>
+            <div class="menu__title menu__title_margin-85-15">
+                <a href="" class="menu__link">Главная</a>
+            </div>
+            <div class="menu__title menu__title_margin-72">
+                <a href="" class="menu__link">Архив</a>
+             </div>
+            <div class="menu__title menu__title_margin-50">
+                <a href="" class="menu__link">Редактор</a>
+            </div>
+            <div class="menu__title menu__title_margin-52">
+                <a href="" class="menu__link">Профиль</a>
+            </div>
+            <img src="./img/quesiton.svg" alt="" class="menu__img menu__img_margin-88">
+            <!-- menu_link -->
+        </div>
+        <div class="page-name">
+            <span class="page-name__title">Изменение диеты</span>
+        </div>
+    </nav>
+    <main class="noselect">
+        <div class="wrapper">
+            <form name = "main">
+                <div class="up-part">
+                    <input type="text" class="up-part__input">
+                    <div class="up-part__block-first">
+                        <input type="checkbox" class="up-part__checkbox" id="up-part__checkbox-1">
+                        <input type="date" class="up-part__datetime" disabled id="up-part__date-1">
+                        <div class="up-part__div">НАЧАЛО</div>
+                    </div>
+                    <div class="up-part__block-second">
+                        <input type="checkbox" class="up-part__checkbox" id="up-part__checkbox-2">
+                        <input type="date" class="up-part__datetime" disabled id="up-part__date-2">
+                        <div class="up-part__div">Окончание</div>
+                    </div>
+                </div>
+                <div class="main-part">
+                    <div class="main-part__subblock">
+                        <a href = "#popup"><div class="main-part__plus"></div></a>
+                        <span class="main-part__title">Связанные ограничения:</span>
+                    </div>
+                    <div class="list">
+                        <div class="list__string">
+                            <div class="list__null-string">
+                                Ничего не выбрано
+                            </div>
+                        </div>
+                        <div class="list__arrow-down" hidden>
+                            <img src="./img/Arrow 6.png" alt="Arrow" class="list__img">
+                        </div>
+                    </div>
+                    <div class="subblock-button">
+                        <a href="#popup-button">
+                            <button type="submit" class="subblock-button__button">Готово</button>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="popup" id="popup">
+            <a href="#body" class="popup__area"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#body" class="popup__close"></a>
+                    <div class="popup__text">
+                        <div class="list-popup">
+                            <div class="list-popup__subblock">
+                                <div class="list-popup__block popup-category">
+                                    <div class="popup-category__category">Категория №1</div>
+                                    <img src="./img/Arrow 6.png" alt="arrow" class="list-popup__arrow list-popup__arrow_rotate">
+                                </div>
+        
+                                <div class="list-popup__array">
+                                    <div class="list-popup__block popup-ingredient">
+                                        <div class="popup-ingredient__ingredient">Ингредиент №1.1</div>
+                                    </div>
+                                    <div class="list-popup__block popup-ingredient">
+                                        <div class="popup-ingredient__ingredient">Ингредиент №1.2</div>
+                                    </div>
+                                    <div class="list-popup__block popup-ingredient">
+                                        <div class="popup-ingredient__ingredient">Ингредиент №1.3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div  class="list-popup__subblock">
+                                <div class="list-popup__block popup-category ">
+                                    <div class="popup-category__category">Категория №2</div>
+                                    <img src="./img/Arrow 6.png" alt="arrow" class="list-popup__arrow list-popup__arrow_rotate">
+                                </div>
+        
+                                
+                                <div class="list-popup__array">
+                                    <div class="list-popup__block popup-ingredient">
+                                        <div class="popup-ingredient__ingredient">Ингредиент №2.1</div>
+                                    </div>
+                                    <div class="list-popup__block popup-ingredient">
+                                        <div class="popup-ingredient__ingredient">Ингредиент №2.2</div>
+                                    </div>
+                                    <div class="list-popup__block popup-ingredient">
+                                        <div class="popup-ingredient__ingredient">Ингредиент №2.3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="popup-notification" id="popup-button">
+            <a href="#body" class="popup-notification__area"></a>
+            <div class="popup-notification__body">
+                <div class="popup-notification__content">
+                    <a href="#body" class="popup-notification__close"></a>
+                    <div class="popup-notification__text">
+                        Диета успешно создана
+                        <img src="./img/done_1.png" alt="accept" class="popup-notification__image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
